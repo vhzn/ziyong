@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-ziye12-QCZJSPEED
+name: sync-ziye66666-QCZJSPEED
 on:
   schedule:
     - cron: '1 */3 * * *'
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-ziye12-QCZJSPEED
+    types: sync-ziye66666-QCZJSPEED
 jobs:
   repo-sync:
     env:
@@ -20,11 +20,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ziye12-QCZJSPEED
+      - name: sync ziye66666-QCZJSPEED
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/ziye12/QCZJSPEED.git"
+          source_repo: "https://github.com/ziye66666/QCZJSPEED.git"
           source_branch: "main"
           destination_branch: "main"
           github_token: ${{ secrets.PAT }}
